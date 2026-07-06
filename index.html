@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PrimeInvest – Надійні інвестиції у ваше майбутнє</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body class="page">
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta__container">
+            <p class="sticky-cta__text">Отримайте персональний план просто зараз!</p>
+            <a href="#lead-form" class="button button--sticky cta-btn-target">Почати зараз</a>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Розумні інвестиції, доступні кожному</h1>
+            <p class="hero__subtitle">Створіть стабільне джерело пасивного доходу під керівництвом експертів PrimeInvest.</p>
+
+            <div class="timer hero__timer">
+                <p class="timer__text">До завершення спеціальної пропозиції залишилося:</p>
+                <div class="timer__display" id="countdown-timer">15:00</div>
+            </div>
+
+            <a href="#lead-form" class="button cta-btn-target">Почати зараз</a>
+        </div>
+    </header>
+
+    <section class="about section">
+        <div class="about__container">
+            <div class="about__content">
+                <h2 class="about__title">Чому обирають PrimeInvest?</h2>
+                <p class="about__text">Ми об'єднуємо передові технології фінансового аналізу та багаторічний досвід аналітиків, щоб запропонувати вам найефективніші інвестиційні стратегії.</p>
+            </div>
+            <div class="about__image-wrapper">
+                <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80"
+                     alt="Аналітика PrimeInvest"
+                     class="about__image"
+                     loading="lazy"
+                     width="600"
+                     height="400">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section">
+        <h2 class="testimonials__title">Відгуки наших інвесторов</h2>
+        <div class="slider" id="slider">
+            <div class="slider__track" id="slider-track">
+                <div class="slider__slide">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Анна М." class="card__photo" loading="lazy" width="80" height="80">
+                        <h3 class="card__name">Анна М.</h3>
+                        <p class="card__text">"З PrimeInvest я змогла накопичити на перший внесок за іпотекою всього за рік. Дуже зручний сервіс та чуйна підтримка!"</p>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Ігор К." class="card__photo" loading="lazy" width="80" height="80">
+                        <h3 class="card__name">Ігор К.</h3>
+                        <p class="card__text">"Надійний інструмент для диверсифікації портфеля. Тішить стабільний дохід та прозорі звіти щодо операцій."</p>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Олена В." class="card__photo" loading="lazy" width="80" height="80">
+                        <h3 class="card__name">Олена В.</h3>
+                        <p class="card__text">"Спочатку боялася інвестувати, але автоматичні стратегії допомогли розібратися. Результатом більш ніж задоволена."</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider__arrow slider__arrow--prev" id="slide-prev" aria-label="Назад">&#10094;</button>
+            <button class="slider__arrow slider__arrow--next" id="slide-next" aria-label="Вперед">&#10095;</button>
+            <div class="slider__dots" id="slider-dots"></div>
+        </div>
+    </section>
+
+    <section class="faq section">
+        <h2 class="faq__title">Часті запитання</h2>
+        <div class="accordion">
+            <div class="accordion__item">
+                <button class="accordion__header">Яка мінімальна сума для старту?</button>
+                <div class="accordion__collapse">
+                    <div class="accordion__body">Ви можете почати інвестувати всього зі $100. Ми прагнемо зробити інвестиції доступними для кожного.</div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__header">Які ризики існують?</button>
+                <div class="accordion__collapse">
+                    <div class="accordion__body">Будь-які інвестиції пов'язані з ризиками. Проте наші алгоритми диверсифікації мінімізують можливі просадки.</div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__header">Як швидко я можу вивести кошти?</button>
+                <div class="accordion__collapse">
+                    <div class="accordion__body">Виведення коштів доступне в будь-який час і займає від 1 до 3 робочих днів залежно від обраного методу.</div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__header">Чи потрібно мені мати економічну освіту?</button>
+                <div class="accordion__collapse">
+                    <div class="accordion__body">Ні, наша платформа повністю автоматизована, а персональні консультанти допоможуть вам налаштувати процес.</div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__header">Чи регулюється діяльність компанії?</button>
+                <div class="accordion__collapse">
+                    <div class="accordion__body">Так, PrimeInvest має всі необхідні міжнародні ліцензії на ведення фінансової діяльності.</div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__header">Чи є приховані комісії?</button>
+                <div class="accordion__collapse">
+                    <div class="accordion__body">Ми працюємо абсолютно прозоро. Усі комісії фіксуються в договорі та становлять не більше 1.5% від прибутку.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lead-form-section section" id="lead-form">
+        <div class="form-container">
+            <h2 class="form-container__title">Залиште заявку</h2>
+
+            <form class="multistep-form" id="multistepForm" novalidate>
+                <div class="multistep-form__step multistep-form__step--active" data-step="1">
+                    <div class="form-group">
+                        <label for="userName" class="form-group__label">Ваше ім'я</label>
+                        <input type="text" id="userName" class="form-group__input" placeholder="Іван">
+                        <span class="form-group__error" id="error-name">Будь ласка, введіть ім'я</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail" class="form-group__label">Email</label>
+                        <input type="email" id="userEmail" class="form-group__input" placeholder="example@invest.com">
+                        <span class="form-group__error" id="error-email">Введіть коректний Email</span>
+                    </div>
+                    <button type="button" class="button form-container__next-btn" id="nextStepBtn">Далі</button>
+                </div>
+
+                <div class="multistep-form__step" data-step="2">
+                    <div class="form-group">
+                        <label for="userPhone" class="form-group__label">Телефон</label>
+                        <input type="tel" id="userPhone" class="form-group__input" placeholder="+380 (XX) XXX-XX-XX">
+                        <span class="form-group__error" id="error-phone">Введіть коректний номер телефону</span>
+                    </div>
+                    <div class="form-group form-group--checkbox">
+                        <label class="form-group__checkbox-label">
+                            <input type="checkbox" id="userAgreement" class="form-group__checkbox">
+                            Я згоден з політикою конфіденційності
+                        </label>
+                        <span class="form-group__error" id="error-agreement">Необхідна ваша згода</span>
+                    </div>
+                    <div class="multistep-form__actions">
+                        <button type="button" class="button button--secondary" id="prevStepBtn">Назад</button>
+                        <button type="submit" class="button">Надіслати заявку</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal" id="successModal">
+        <div class="modal__content">
+            <h3 class="modal__title">Заявку прийнято!</h3>
+            <p class="modal__text">Наш менеджер зв'яжеться з вами протягом 15 хвилин для підтвердження даних.</p>
+            <button class="button modal__close-btn" id="closeModalBtn">Закрити</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
